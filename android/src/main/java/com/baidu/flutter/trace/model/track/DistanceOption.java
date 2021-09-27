@@ -257,6 +257,7 @@ public final class DistanceOption extends BaseOption {
         distanceRequest.setStartTime(startTime);
         distanceRequest.setEndTime(endTime);
         distanceRequest.setProcessed(isProcessed);
+        distanceRequest.setEntityName(entityName);
         distanceRequest.setProcessOption(processOption.toProcessOption());
         distanceRequest.setSupplementMode(
                 com.baidu.trace.api.track.SupplementMode.values()[supplementMode]);

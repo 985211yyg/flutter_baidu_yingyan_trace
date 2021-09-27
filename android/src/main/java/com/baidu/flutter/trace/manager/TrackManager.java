@@ -188,7 +188,6 @@ public class TrackManager extends BaseManager {
         DistanceOption distanceOption =
                 (DistanceOption) DataConvertUtil.mapToObject((Map<String, Object>) call.arguments,
                         DistanceOption.class);
-        Log.e(">>>>查询里程", "queryDistance: " + distanceOption.toString());
         if (distanceOption == null) {
             result.success(false);
             return;
