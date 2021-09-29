@@ -10,7 +10,9 @@ import com.baidu.trace.model.LocationMode;
 import android.content.Context;
 import android.os.Handler;
 import android.util.Log;
+
 import androidx.annotation.NonNull;
+
 import io.flutter.embedding.engine.plugins.FlutterPlugin;
 import io.flutter.plugin.common.MethodCall;
 import io.flutter.plugin.common.MethodChannel;
@@ -117,7 +119,7 @@ public class LBSTraceController implements MethodChannel.MethodCallHandler {
             if (mLBSTraceClient != null) {
                 mLBSTraceClient.stopRealTimeLoc();
             }
-        } else  {
+        } else {
             result.notImplemented();
         }
     }
