@@ -94,7 +94,7 @@ class TracePlugin implements FlutterPlugin, MethodChannel.MethodCallHandler {
                     public void onTraceOpenSuccess() {
                         Log.e(TAG, "onTraceOpenSuccess: ");
                         Map<String, Object> data = new HashMap<>();
-                        data.put("result", true);
+                        data.put("Trace", true);
                         if (mEventSink != null) mEventSink.success(data);
                     }
 
@@ -102,7 +102,7 @@ class TracePlugin implements FlutterPlugin, MethodChannel.MethodCallHandler {
                     public void onTraceOpenFailed(int code, String msg) {
                         Log.e(TAG, "onTraceOpenFailed: " + code + msg);
                         Map<String, Object> data = new HashMap<>();
-                        data.put("result", false);
+                        data.put("Trace", false);
                         if (mEventSink != null) mEventSink.success(data);
                     }
                 });
